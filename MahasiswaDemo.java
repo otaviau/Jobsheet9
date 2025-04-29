@@ -16,11 +16,11 @@ public class MahasiswaDemo {
             sc.nextLine();
             switch (pilih) {
                 case 1:
-                    System.out.println("Nama : ");
+                    System.out.print("Nama : ");
                     String nama = sc.nextLine();
-                    System.out.println("NIM  : ");
+                    System.out.print("NIM  : ");
                     String nim = sc.nextLine();
-                    System.out.println("Kelas: ");
+                    System.out.print("Kelas: ");
                     String kelas = sc.nextLine();
                     Mahasiswa20 mhs = new Mahasiswa20(nama, nim, kelas);
                     stack.push(mhs);
@@ -33,7 +33,7 @@ public class MahasiswaDemo {
                         System.out.print("Masukkan nilai (0-100): ");
                         int nilai = sc.nextInt();
                         dinilai.tugasDinilai(nilai);
-                        System.out.printf("Nilai Tugas %sn adalah %d\n", dinilai.nama, nilai);
+                        System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama, nilai);
                     }
                     break;
                 case 3:
