@@ -10,7 +10,9 @@ public class MahasiswaDemo {
             System.out.println("1. Mengumpulkan Tugas");
             System.out.println("2. Menilai Tugas");
             System.out.println("3. Melihat Tugas Teratas");
-            System.out.println("4. Melihat Daftar Tugas");
+            System.out.println("4. Melihat Pengumpulan Pertama");
+            System.out.println("5. Jumlah Mahasiswa yang Mengumpulkan");
+            System.out.println("6. Melihat Daftar Tugas");
             System.out.print("Pilih: ");
             pilih = sc.nextInt();
             sc.nextLine();
@@ -43,6 +45,17 @@ public class MahasiswaDemo {
                     }
                     break;
                 case 4:
+                    Mahasiswa20 lihatAwal =stack.peekFirst();
+                    if (lihatAwal != null) {
+                        System.out.println("Tugas pertama dikumpulkan oleh "+ lihatAwal.nama);
+                    }
+                    break;
+                case 5:
+                    if (stack != null) {
+                        System.out.println("Jumlah mahasiswa yang telah mengumpulkan tugas "+stack.peekTop());
+                    }
+                    break;
+                case 6:
                     System.out.println("Daftar nama tugas");
                     System.out.println("Nama\tNIM\tKelas");
                     stack.print();
