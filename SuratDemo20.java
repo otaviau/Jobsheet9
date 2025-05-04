@@ -19,15 +19,15 @@ public class SuratDemo20 {
             switch (pilih) {
                 case 1:
                     System.out.println("\n--TERIMA SURAT IZIN--");
-                    System.out.print("ID Surat:");
+                    System.out.print("ID Surat      : ");
                     String id = sc.nextLine();
-                    System.out.print("Nama Mahasiswa:");
+                    System.out.print("Nama Mahasiswa: ");
                     String nama = sc.nextLine();
-                    System.out.print("Kelas:");
+                    System.out.print("Kelas         : ");
                     String kelas = sc.nextLine();
-                    System.out.print("Jenis Izin:");
+                    System.out.print("Jenis Izin    : ");
                     char jenis = sc.nextLine().charAt(0);
-                    System.out.print("Durasi:");
+                    System.out.print("Durasi (hari) : ");
                     int durasi = sc.nextInt(); sc.nextLine();
                     stack.push(new Surat20(id, nama, kelas, jenis, durasi));
                     break;
